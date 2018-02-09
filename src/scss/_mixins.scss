@@ -1,0 +1,7 @@
+@mixin section-wrapper ($height, $minHeight){
+  position: relative;
+  height: $height;
+  min-height: $minHeight;
+  width: 100%;
+  overflow: hidden;
+}

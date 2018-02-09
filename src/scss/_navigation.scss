@@ -1,0 +1,148 @@
+// MENU
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  cursor: pointer;
+  z-index: 10;
+}
+//
+// .burger-menu {
+//   position: absolute;
+//   left: 20px;
+//   top: 20px;
+//   width: 40px;
+//   height: 30px;
+//   z-index: 1;
+// }
+//
+// $menu-animation-duration: 250ms;
+// $menu-animation-timing: ease-out;
+//
+// .burger-menu-piece {
+//   display: block;
+//   position: absolute;
+//   width: 38px;
+//   border-top: 3px solid $white;
+//   transform-origin: 50% 50%;
+//   transition: transform $menu-animation-duration $menu-animation-timing;
+//
+//   &.burgerMenuDark {
+//     border-top-color: $black
+//   }
+//
+//   &:nth-child(1) {
+//     top: 0;
+//   }
+//
+//   &:nth-child(2) {
+//     top: 12px;
+//     opacity: 1;
+//     transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+//   }
+//
+//   &:nth-child(3) {
+//     top: 24px;
+//   }
+//
+//   .active & {
+//       &:nth-child(1) {
+//         animation: burger-open-top $menu-animation-duration $menu-animation-timing forwards;
+//       }
+//
+//       &:nth-child(2) {
+//         opacity: 0;
+//         transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+//       }
+//
+//       &:nth-child(3) {
+//         animation: burger-open-bot $menu-animation-duration $menu-animation-timing forwards;
+//       }
+//   }
+//
+//   .closing & {
+//     &:nth-child(1) {
+//       animation: burger-close-top $menu-animation-duration $menu-animation-timing forwards;
+//     }
+//
+//     &:nth-child(3) {
+//       animation: burger-close-bot $menu-animation-duration $menu-animation-timing forwards;
+//     }
+//   }
+// }
+
+.menu {
+  position: absolute;
+  height: 4em;
+  width: 100%;
+  background: rgba(18, 18, 18, 0.70);
+
+  & ul {
+    text-align: center;
+    padding-top: 22px;
+  }
+
+  & li {
+    display: inline-block;
+    padding-left: 2em;
+  }
+}
+
+.menuItem {
+  color: $white;
+  font-size: $font-large;
+
+  &.menuItemDark {
+    color: $black
+  }
+
+  &:hover {
+    color: $purple;
+  }
+}
+
+.reveal {
+  margin-top: 0em;
+}
+//
+// @keyframes burger-open-top {
+//   50% {
+//     transform: translate3d(0, 12px, 0);
+//   }
+//   100% {
+//     transform: translate3d(0, 12px, 0) rotate(45deg);
+//   }
+// }
+//
+// @keyframes burger-open-bot {
+//   50% {
+//     transform: translate3d(0, -12px, 0);
+//   }
+//   100% {
+//     transform: translate3d(0, -12px, 0) rotate(-45deg);
+//   }
+// }
+//
+// @keyframes burger-close-top {
+//   0% {
+//     transform: translate3d(0, 12px, 0) rotate(45deg);
+//   }
+//   50% {
+//     transform: translate3d(0, 12px, 0) rotate(0deg);
+//   }
+//   100% {
+//     transform: translate3d(0, 0, 0);
+//   }
+// }
+//
+// @keyframes burger-close-bot {
+//   0% {
+//     transform: translate3d(0, -12px, 0) rotate(-45deg);
+//   }
+//   50% {
+//     transform: translate3d(0, -12px, 0) rotate(0deg);
+//   }
+//   100% {
+//     transform: translate3d(0, 0, 0);
+//   }
+// }

@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Letter Gothic Std';
+  src: url("../fonts/LetterGothicStd-Bold.eot");
+  src: url("../fonts/LetterGothicStd-Bold.eot") format("woff2"), url("../fonts/LetterGothicStd-Bold.woff") format("woff"), url("../fonts/LetterGothicStd-Bold.ttf") format("truetype"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+p {
+  font-family: 'Letter Gothic Std';
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0px; }
+
+.full-screen, .home {
+  margin: auto;
+  width: 100vw;
+  height: 100vh; }
+
+.body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; }
+
+.center-xy, .sheps-logo {
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.center-x {
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center-y {
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.bg-pattern-full, .pattern-1, .pattern-2, .pattern-3 {
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+.section-wrapper, .bar, .cocktails, .restaurant, .brunch, .contact {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  min-height: 100vh; }
+
+.bar {
+  background-color: #121212; }
+
+.bar-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/sheps_sign.jpg"); }
+
+.cocktails {
+  background-color: #121212;
+  min-height: initial; }
+
+.cocktails-blurb {
+  text-align: center;
+  color: #efefef;
+  font-size: 20px;
+  padding: 40px 40px; }
+  @media (min-width: 600px) {
+    .cocktails-blurb {
+      padding: 40px 120px; } }
+  .cocktails-blurb p {
+    margin-bottom: 16px; }
+  .cocktails-blurb:last-child {
+    margin-bottom: 0; }
+  .cocktails-blurb .instagram-link {
+    color: #efefef; }
+    .cocktails-blurb .instagram-link:hover {
+      text-decoration: underline; }
+
+.cocktails-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/drink-pineapple.jpg"); }
+
+.restaurant {
+  background-color: #efefef; }
+
+.restaurant-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/food-assorted.jpg"); }
+
+.brunch {
+  background-color: #efefef; }
+
+.brunch-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/oysters.jpg"); }
+
+.menuImage {
+  width: 100%;
+  margin-bottom: -5px; }
+
+/* styles to use when web fonts are loading */
+.wf-loading {
+  visibility: hidden; }
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 3em;
+  cursor: pointer;
+  z-index: 10; }
+
+.menu {
+  position: absolute;
+  height: 4em;
+  width: 100%;
+  background: rgba(18, 18, 18, 0.7); }
+  .menu ul {
+    text-align: center;
+    padding-top: 22px; }
+  .menu li {
+    display: inline-block;
+    padding-left: 2em; }
+
+.menuItem {
+  color: #efefef;
+  font-size: 20px; }
+  .menuItem.menuItemDark {
+    color: #121212; }
+  .menuItem:hover {
+    color: #6a3683; }
+
+.reveal {
+  margin-top: 0em; }
+
+.home {
+  background-color: #121212; }
+
+.sheps-logo {
+  position: absolute;
+  width: 88vw; }
+  @media (min-width: 415px) {
+    .sheps-logo {
+      width: 64vw;
+      min-width: 24em;
+      max-width: 36em; } }
+  .sheps-logo ul {
+    line-height: 140%;
+    margin-top: -2%; }
+    @media (min-width: 415px) {
+      .sheps-logo ul {
+        text-align: center;
+        margin-top: -1%;
+        line-height: 0em; } }
+  .sheps-logo li {
+    display: block;
+    padding-top: 4%; }
+    @media (min-width: 415px) {
+      .sheps-logo li {
+        display: inline; } }
+  .sheps-logo svg {
+    color: #efefef;
+    fill: currentColor !important; }
+
+.pattern-1 {
+  background-color: #5a2d6f;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236a3683' fill-opacity='0.9'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px; }
+
+.pattern-2 {
+  background-color: #5a2d6f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236a3683' fill-opacity='0.9'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px; }
+
+.pattern-3 {
+  background-color: #5a2d6f;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%236a3683' fill-opacity='0.9' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-size: 160px; }
+
+.row-item svg {
+  color: #6a3683;
+  fill: currentColor !important;
+  width: inherit;
+  vertical-align: middle; }
+  .row-item svg:hover {
+    color: #efefef; }
+
+#logoBar {
+  width: 100%; }
+  @media (min-width: 415px) {
+    #logoBar {
+      width: 26%;
+      padding-right: 11%; } }
+
+#logoKorean {
+  width: 100%; }
+  @media (min-width: 415px) {
+    #logoKorean {
+      width: 18%; } }
+
+#logoRestaurant {
+  width: 100%; }
+  @media (min-width: 415px) {
+    #logoRestaurant {
+      width: 26%;
+      padding-left: 11%; } }
+
+.social-media-links {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  height: 40px;
+  width: 120px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+  .social-media-links a {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px; }
+    .social-media-links a .facebook {
+      width: 40px;
+      height: 40px;
+      margin-top: -3px;
+      margin-left: -8px; }
+
+.address {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  text-align: right; }
+  .address p {
+    color: #efefef;
+    font-size: 20px;
+    margin-top: 12px; }
+
+.contact {
+  background-color: #121212;
+  padding-bottom: 20px;
+  min-height: initial; }
+
+#map {
+  width: 100vw;
+  height: 390px; }
+
+.contact-lower {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .contact-lower .contact-address p {
+    color: #efefef;
+    font-size: 20px;
+    margin-top: 12px; }
+  .contact-lower .timeout-link {
+    font-family: 'Letter Gothic Std';
+    color: #efefef;
+    font-size: 16px;
+    margin-top: 30px; }
+    .contact-lower .timeout-link:hover {
+      text-decoration: underline; }
+
+.city-mapper-mobile {
+  margin-top: 20px;
+  display: block; }
+  @media (min-width: 600px) {
+    .city-mapper-mobile {
+      display: none; } }
+
+.copyright-container {
+  color: #efefef;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; }
+  .copyright-container .copyright {
+    font-size: 18px;
+    font-family: initial; }
+
+.about {
+  position: relative; }
+  .about p {
+    font-size: 16px;
+    margin-bottom: 18px;
+    z-index: 1; }
+  .about .about-header {
+    font-size: 22px; }
+
+.image-viewport {
+  height: 200px; }
+
+.about-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("/images/bar-two.jpg"); }
+
+.layer-overlay {
+  background-color: rgba(248, 247, 216, 0.7);
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.about-blurb {
+  padding: 40px 140px; }

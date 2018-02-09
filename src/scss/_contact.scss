@@ -1,0 +1,65 @@
+
+.contact {
+  @extend .section-wrapper;
+  background-color: $black;
+  padding-bottom: 20px;
+  min-height: initial;
+}
+
+// MAP
+#map {
+  width: 100vw;
+  height: 390px;
+}
+
+.contact-lower {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include breakpoint($medium) {
+    // flex-direction: row;
+  }
+
+  .contact-address {
+    p {
+      color: $white;
+      font-size: $font-large;
+      margin-top: 12px;
+    }
+  }
+
+  .timeout-link {
+    font-family: 'Letter Gothic Std';
+    color: $white;
+    font-size: $font-medium;
+    margin-top: 30px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.city-mapper-mobile {
+  margin-top: 20px;
+  display: block;
+
+  @include breakpoint($medium) {
+    display: none;
+  }
+}
+
+.copyright-container {
+  color: $white;
+  font-size: $font-medium;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+
+  .copyright {
+    font-size: 18px;
+    font-family: initial;
+  }
+}

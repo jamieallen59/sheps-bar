@@ -1,0 +1,19 @@
+@import "..";
+
+@include breakpoint('sm') {
+  body {
+    background-color: red;
+  }
+}
+
+@include breakpoint('md', 'lg') {
+  body {
+    background-color: green;
+  }
+}
+
+@include breakpoint('lg') {
+  body {
+    background-color: blue;
+  }
+}

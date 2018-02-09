@@ -1,0 +1,171 @@
+// FONTS
+@font-face {
+  font-family: 'Letter Gothic Std';
+  src: url('../fonts/LetterGothicStd-Bold.eot');
+  src: url('../fonts/LetterGothicStd-Bold.eot')  format('woff2'),url('../fonts/LetterGothicStd-Bold.woff') format('woff'),url('../fonts/LetterGothicStd-Bold.ttf') format('truetype');
+}
+
+// GLOBAL
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-family: 'Letter Gothic Std';
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0px;
+}
+
+// CONTAINERS
+.full-screen {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.body {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+// POSITIONING
+.center-xy {
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-x {
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-y {
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// IMAGES
+.bg-pattern-full {
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+// SECTIONS
+.section-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  min-height: 100vh;
+}
+
+.bar {
+  @extend .section-wrapper;
+  background-color: $black;
+}
+
+.bar-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/sheps_sign.jpg");
+}
+
+.cocktails {
+  @extend .section-wrapper;
+  background-color: $black;
+  min-height: initial;
+}
+
+.cocktails-blurb {
+  text-align: center;
+  color: $white;
+  font-size: $font-large;
+  padding: 40px 40px;
+
+  @include breakpoint($medium) {
+    padding: 40px 120px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .instagram-link {
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.cocktails-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/drink-pineapple.jpg");
+}
+
+.restaurant {
+  @extend .section-wrapper;
+  background-color: $white;
+}
+
+.restaurant-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/food-assorted.jpg");
+}
+
+.brunch {
+  @extend .section-wrapper;
+  background-color: $white;
+}
+
+.brunch-background-image {
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/oysters.jpg");
+}
+
+.menuImage {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+/* styles to use when web fonts are loading */
+.wf-loading {
+  visibility: hidden;
+}
