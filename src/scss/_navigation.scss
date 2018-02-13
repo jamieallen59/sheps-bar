@@ -75,16 +75,35 @@
   position: absolute;
   height: 4em;
   width: 100%;
-  background: rgba(18, 18, 18, 0.70);
 
   & ul {
-    text-align: center;
-    padding-top: 22px;
+    padding-top: 8px;
+    background-color: rgba(18, 18, 18, 0.70);
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    @include breakpoint($medium) {
+      justify-content: center;
+      flex-direction: row;
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
   }
 
   & li {
     display: inline-block;
-    padding-left: 2em;
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    @include breakpoint($medium) {
+      flex-direction: column;
+      padding-left: 2em;
+      padding-top: 2px;
+      padding-bottom: 0;
+    }
   }
 }
 

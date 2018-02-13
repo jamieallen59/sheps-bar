@@ -2,7 +2,9 @@
 @font-face {
   font-family: 'Letter Gothic Std';
   src: url('../fonts/LetterGothicStd-Bold.eot');
-  src: url('../fonts/LetterGothicStd-Bold.eot')  format('woff2'),url('../fonts/LetterGothicStd-Bold.woff') format('woff'),url('../fonts/LetterGothicStd-Bold.ttf') format('truetype');
+  src: url('../fonts/LetterGothicStd-Bold.eot')  format('woff2'),
+        url('../fonts/LetterGothicStd-Bold.woff') format('woff'),
+        url('../fonts/LetterGothicStd-Bold.ttf') format('truetype');
 }
 
 // GLOBAL
@@ -73,7 +75,11 @@ p {
   width: 100%;
   overflow: hidden;
   height: auto;
-  min-height: 100vh;
+  min-height: 80vh;
+
+  @include breakpoint($medium) {
+    min-height: 100vh;
+  }
 }
 
 .bar {

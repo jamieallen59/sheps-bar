@@ -56,7 +56,10 @@ p {
   width: 100%;
   overflow: hidden;
   height: auto;
-  min-height: 100vh; }
+  min-height: 80vh; }
+  @media (min-width: 600px) {
+    .section-wrapper, .bar, .cocktails, .restaurant, .brunch, .contact {
+      min-height: 100vh; } }
 
 .bar {
   background-color: #121212; }
@@ -138,14 +141,31 @@ p {
 .menu {
   position: absolute;
   height: 4em;
-  width: 100%;
-  background: rgba(18, 18, 18, 0.7); }
+  width: 100%; }
   .menu ul {
-    text-align: center;
-    padding-top: 22px; }
+    padding-top: 8px;
+    background-color: rgba(18, 18, 18, 0.7);
+    padding-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    @media (min-width: 600px) {
+      .menu ul {
+        justify-content: center;
+        flex-direction: row;
+        padding-top: 22px;
+        padding-bottom: 22px; } }
   .menu li {
     display: inline-block;
-    padding-left: 2em; }
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    @media (min-width: 600px) {
+      .menu li {
+        flex-direction: column;
+        padding-left: 2em;
+        padding-top: 2px;
+        padding-bottom: 0; } }
 
 .menuItem {
   color: #efefef;
@@ -164,7 +184,7 @@ p {
 .sheps-logo {
   position: absolute;
   width: 88vw; }
-  @media (min-width: 415px) {
+  @media (min-width: 600px) {
     .sheps-logo {
       width: 64vw;
       min-width: 24em;
@@ -172,7 +192,7 @@ p {
   .sheps-logo ul {
     line-height: 140%;
     margin-top: -2%; }
-    @media (min-width: 415px) {
+    @media (min-width: 600px) {
       .sheps-logo ul {
         text-align: center;
         margin-top: -1%;
@@ -180,7 +200,7 @@ p {
   .sheps-logo li {
     display: block;
     padding-top: 4%; }
-    @media (min-width: 415px) {
+    @media (min-width: 600px) {
       .sheps-logo li {
         display: inline; } }
   .sheps-logo svg {
@@ -212,20 +232,20 @@ p {
 
 #logoBar {
   width: 100%; }
-  @media (min-width: 415px) {
+  @media (min-width: 600px) {
     #logoBar {
       width: 26%;
       padding-right: 11%; } }
 
 #logoKorean {
   width: 100%; }
-  @media (min-width: 415px) {
+  @media (min-width: 600px) {
     #logoKorean {
       width: 18%; } }
 
 #logoRestaurant {
   width: 100%; }
-  @media (min-width: 415px) {
+  @media (min-width: 600px) {
     #logoRestaurant {
       width: 26%;
       padding-left: 11%; } }
@@ -257,8 +277,11 @@ p {
 .address {
   position: absolute;
   right: 2em;
-  bottom: 2em;
+  bottom: 5em;
   text-align: right; }
+  @media (min-width: 600px) {
+    .address {
+      bottom: 2em; } }
   .address p {
     color: #efefef;
     font-size: 20px;
