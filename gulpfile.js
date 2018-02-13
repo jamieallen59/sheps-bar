@@ -70,10 +70,9 @@ gulp.task('default', function (callback) {
   )
 })
 
-
 gulp.task('deploy', [], function () {
   return surge({
-    project: './build',         // Path to your static build directory
-    domain: 'sheps-bar-test.surge.sh'  // Your domain or Surge subdomain
+    project: './build', // Path to your static build directory
+    domain: 'sheps-bar-test.surge.sh' // Your domain or Surge subdomain
   })
 })
