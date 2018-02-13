@@ -77,9 +77,9 @@
   width: 100%;
 
   & ul {
-    padding-top: 8px;
+    padding-top: 4px;
     background-color: rgba(18, 18, 18, 0.70);
-    padding-bottom: 6px;
+    padding-bottom: 2px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -95,8 +95,8 @@
   & li {
     display: inline-block;
     padding-left: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 
     @include breakpoint($medium) {
       flex-direction: column;
@@ -109,7 +109,11 @@
 
 .menuItem {
   color: $white;
-  font-size: $font-large;
+  font-size: $font-medium;
+
+  @include breakpoint($medium) {
+    font-size: $font-large;
+  }
 
   &.menuItemDark {
     color: $black
