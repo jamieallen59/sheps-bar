@@ -1,4 +1,10 @@
 
+.home-pattern-full {
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .home {
   @extend .full-screen;
   background-color: $black;
@@ -43,7 +49,7 @@
 }
 
 .pattern-1 {
-  @extend .bg-pattern-full;
+  @extend .home-pattern-full;
 
   @include breakpoint($medium) {
     background-color: $dark-purple;
@@ -53,7 +59,7 @@
 }
 
 .pattern-2 {
-  @extend .bg-pattern-full;
+  @extend .home-pattern-full;
 
   @include breakpoint($medium) {
     background-color: $dark-purple;
@@ -63,7 +69,7 @@
 }
 
 .pattern-3 {
-  @extend .bg-pattern-full;
+  @extend .home-pattern-full;
 
   @include breakpoint($medium) {
     background-color: $dark-purple;

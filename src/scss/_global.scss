@@ -64,9 +64,16 @@ p {
 
 // IMAGES
 .bg-pattern-full {
-  background-repeat: repeat;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+
+  @include breakpoint($medium) {
+    background-attachment: fixed;
+  }
 }
 
 // SECTIONS
@@ -82,17 +89,18 @@ p {
   }
 }
 
+.about-background-image {
+  @extend .bg-pattern-full;
+  background-image: url("/images/bar-two.jpg");
+}
+
 .bar {
   @extend .section-wrapper;
   background-color: $black;
 }
 
 .bar-background-image {
-  width: 100%;
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  @extend .bg-pattern-full;
   background-image: url("/images/sheps_sign.jpg");
 }
 
@@ -130,11 +138,7 @@ p {
 }
 
 .cocktails-background-image {
-  width: 100%;
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  @extend .bg-pattern-full;
   background-image: url("/images/drink-pineapple.jpg");
 }
 
@@ -144,11 +148,7 @@ p {
 }
 
 .restaurant-background-image {
-  width: 100%;
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  @extend .bg-pattern-full;
   background-image: url("/images/food-assorted.jpg");
 }
 
@@ -158,11 +158,7 @@ p {
 }
 
 .brunch-background-image {
-  width: 100%;
-  height: 300px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  @extend .bg-pattern-full;
   background-image: url("/images/oysters.jpg");
 }
 
