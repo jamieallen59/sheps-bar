@@ -60,9 +60,7 @@ function scroll() {
       var isCocktail = hash === '#cocktails'
 
       var baseOffset = $(hash).offset().top
-      var offset = isCocktail
-        ? baseOffset - 120
-        : baseOffset
+      var offset = isCocktail ? baseOffset - 120 : baseOffset
 
       $('html, body').animate({
         scrollTop: offset

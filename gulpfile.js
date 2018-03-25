@@ -4,6 +4,7 @@ var browserSync = require('browser-sync').create();
 var del = require('del');
 var runSequence = require('run-sequence');
 var surge = require('gulp-surge')
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('html', function() {
   return gulp.src('src/templates/*')
@@ -16,6 +17,7 @@ gulp.task('html', function() {
 gulp.task('sass', function() {
   return gulp.src('src/scss/style.scss')
     .pipe(sass())
+    .pipe(autoprefixer())
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.reload({
       stream: true

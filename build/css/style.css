@@ -34,17 +34,20 @@ p {
   margin: auto;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .center-x {
   margin: auto;
   left: 50%;
-  transform: translateX(-50%); }
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .center-y {
   margin: auto;
   top: 50%;
-  transform: translateY(-50%); }
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .bg-pattern-full, .about-background-image, .bar-background-image, .cocktails-background-image, .restaurant-background-image, .brunch-background-image {
   width: 100%;
@@ -268,13 +271,9 @@ p {
   bottom: 1em;
   height: 40px;
   width: 120px;
-  display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
   justify-content: center; }
   @media (min-width: 600px) {
     .social-media-links {
@@ -305,6 +304,9 @@ p {
       .address p {
         font-size: 20px;
         margin-top: 12px; } }
+
+.phoneNumber {
+  color: #efefef; }
 
 .contact {
   background-color: #121212;
